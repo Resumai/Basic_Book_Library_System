@@ -1,16 +1,19 @@
+from library.managers.book_inventory import BookInventory
+from library.managers.lending_manager import LendingManager
+from library.managers.user_manager import UserManager
+from library.models.book import Book
+from library.models.user import User
+
 from os import system, name
 
 def clear():
     system('cls' if name == 'nt' else 'clear')
 
 
-
-from library import Book, BookInventory, User, LendingManager, UserManager
-
-
 book_inventory = BookInventory()
 user_manager = UserManager()
 lend_records = LendingManager()
+
 
 def populate_mock_data():
     # make sure no data files in data folder exist

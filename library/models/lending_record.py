@@ -1,7 +1,7 @@
 
 from datetime import timedelta, date
-from .book import Book
-from .user import User
+from library.models.book import Book
+from library.models.user import User
 
 class LendingRecord:
     def __init__(self, book: Book, user: User, duration_days: int = 14, borrowed_at = None):

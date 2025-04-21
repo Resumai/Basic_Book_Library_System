@@ -1,4 +1,4 @@
-from .book import Book
+from library.models.book import Book
 
 class User:
     def __init__(self, username = None, password = None, card_id = None, role = None ):

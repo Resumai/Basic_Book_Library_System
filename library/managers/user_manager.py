@@ -1,6 +1,6 @@
 import os
 import pickle
-from ..models.user import User
+from library.models.user import User
 
 class UserManager:
     def __init__(self, users_file=r"data\users.pkl"):
