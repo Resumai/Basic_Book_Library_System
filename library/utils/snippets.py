@@ -14,7 +14,7 @@ lend_records = LendingManager()
 
 def populate_mock_data():
     # make sure no data files in data folder exist
-    from dev_stuff.mock_data import books_lib
+    from library.utils.mock_data import books_lib
     book_inventory.add_all_books(books_lib)
     user_manager.add_admin("Admin", "1234")
     user_manager.add_user("John", "0001")

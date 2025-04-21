@@ -1,3 +1,6 @@
+# Prevents __pycache__ generation - cache is not needed for this small project
+import sys; sys.dont_write_bytecode = True
+# Rest of imports
 import os
 from library import Book, BookInventory, LendingManager, UserManager
 
@@ -6,11 +9,6 @@ from library import Book, BookInventory, LendingManager, UserManager
 book_inventory = BookInventory()
 user_manager = UserManager()
 lend_records = LendingManager()
-
-
-
-
-
 
 
 # Helper function to clear the screen
@@ -270,7 +268,7 @@ main()
 
 
 # For debugging purposes:
-# from dev_stuff.snippets import print_all_user_data, print_lend_records, populate_mock_data
+# from library.utils.snippets import print_all_user_data, print_lend_records, populate_mock_data
 
 # populate_mock_data() # can populate mock data for fresh start, but first need to delete all files in data folder
 # book_inventory.print_all_books()

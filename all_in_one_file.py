@@ -4,6 +4,8 @@ import uuid
 from datetime import timedelta, date
 
 
+## This whole project in a single file. Only thing needed is data files.
+
 # --- Book Class ---
 class Book:
     def __init__(self, title : str, author : str, year : int, genre : str):

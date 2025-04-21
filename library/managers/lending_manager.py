@@ -1,8 +1,8 @@
-from .book import Book
+from ..models.book import Book
 from .book_inventory import BookInventory
-from .lending_record import LendingRecord
+from ..models.lending_record import LendingRecord
 from .user_manager import UserManager
-from .user import User
+from ..models.user import User
 import pickle
 import os
 
